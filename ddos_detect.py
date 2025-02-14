@@ -29,7 +29,7 @@ def packet_callback(packet):
 
 
 if __name__ == "__main__":
-    if os.geteuid() != 0:
+    if os.getpid() != 0:
         print("This script requires root privileges.")
         sys.exit(1)
 
