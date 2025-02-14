@@ -15,4 +15,4 @@ def packet_callback(packet):
     else:
         print("Non-IP packet captured")
 
-sniff(prn=packet_callback, count=10)  # Capture 10 packets
+sniff(prn=packet_callback, count=2)  # Capture 10 packets
